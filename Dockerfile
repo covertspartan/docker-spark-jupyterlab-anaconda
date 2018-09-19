@@ -17,7 +17,7 @@ RUN wget --quiet https://repo.continuum.io/archive/Anaconda2-5.2.0-Linux-x86_64.
 # Expose Jupyter and Spark WebUI default ports
 # Setup Python Path Variables
 #-------------------------------------------------------------------------------
-EXPOSE 8080 4040 8888
+EXPOSE 4040 8888
 ENV SPARK_HOME=/usr/spark
 ENV PYTHONPATH=${PYTHONPATH}:/usr/local/sifi/sifi_spark/:${SPARK_HOME}/python/:${SPARK_HOME}/python/lib/:${SPARK_HOME}/python/lib/py4j-0.10.7-src.zip
 
