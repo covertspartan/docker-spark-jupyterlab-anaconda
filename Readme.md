@@ -8,3 +8,5 @@ You may build and run the image locally with the following command from within t
 docker build . --tag spark-jupyter-local-test
 docker run -i -t -p 8888:8888 -P spark-jupyter-local-test:latest
 ```
+
+Additional packages may be automatically installed when the notebook starts by defining the `PIP_DEPENDENCIES`
